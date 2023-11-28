@@ -1,5 +1,5 @@
 # educational-management-system
-<img src="https://github.com/HoseinRezaeeM/educational-management-system/blob/master/education-management-system-in-bangladesh-bidyaan.jpg">
+<img src="https://github.com/HoseinRezaeeM/educational-management-system/blob/master/education-management-system-in-bangladesh-bidyaan.jpg",align="center">
 A complete educational system management plan that includes teachers, students, courses, and educational employee.
 1. If the education employee enters the system, he can do the following
 Registration, deletion and editing of student details 
