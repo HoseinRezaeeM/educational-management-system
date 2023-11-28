@@ -31,4 +31,16 @@ public class BaseUser extends BaseEntity<Integer> {
     public BaseUser(Integer integer) {
         super(integer);
     }
+
+    @Override
+    public String toString() {
+        return "firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", age=" + age +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
+                '}';
+    }
 }
