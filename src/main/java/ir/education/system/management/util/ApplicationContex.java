@@ -22,6 +22,9 @@ public class ApplicationContex {
     private static final SelectedCourseSrevice selectedCourseSrevice;
     private static final SemesterProfessorRepository semesterProfessorRepository;
     private static final SemesterProfessorService semesterProfessorService;
+    private static final UserRepository userRepository;
+    private static final UserService userService;
+
 
     static {
         entityManager = EntityManerFactoryProvider.getEntityManagerFactory().createEntityManager();
@@ -37,6 +40,8 @@ public class ApplicationContex {
         selectedCourseSrevice = new SelectedCourseServiceImpl(selectedCourseRepository);
         semesterProfessorRepository = new SemesterProfessorRepositoryImpl(entityManager);
         semesterProfessorService = new SemesterProfessorSeriveImpl(semesterProfessorRepository);
+        userRepository = new UserRepositoryImpl(entityManager);
+        userService = new UserServiceImpl(userRepository);
 
     }
 
@@ -62,6 +67,10 @@ public class ApplicationContex {
 
     public static StudentService getStudentServiceImpl() {
         return studentService;
+    }
+
+    public static UserService getUserService() {
+        return userService;
     }
 
 }
