@@ -27,4 +27,8 @@ public class BaseUser extends BaseEntity<Integer> {
         this.username = username;
         this.password = password;
     }
+
+    public BaseUser(Integer integer) {
+        super(integer);
+    }
 }
