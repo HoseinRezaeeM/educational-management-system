@@ -6,6 +6,8 @@ import ir.education.system.management.base.repository.BaseEntityRepository;
 import javax.persistence.EntityManager;
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.Optional;
+
 @SuppressWarnings("unused")
 public abstract class BaseEntityRepositoryImpl<ID extends Serializable, T extends BaseEntity<ID>> implements BaseEntityRepository<ID, T> {
     protected EntityManager entityManager;
@@ -51,6 +53,11 @@ public abstract class BaseEntityRepositoryImpl<ID extends Serializable, T extend
     public Collection<T> findAll() {
         return entityManager.createQuery(
                 "from " + getEntityClass().getSimpleName(), getEntityClass()).getResultList();
+    }
+
+    @Override
+    public Optional<T> findById(ID id) {
+        return Optional.ofNullable(entityManager.find(getEntityClass(),id));
     }
 
     public abstract Class<T> getEntityClass();
