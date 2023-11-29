@@ -21,7 +21,6 @@ import java.util.List;
 @PrimaryKeyJoinColumn(name = "course_id")
 public class Course extends BaseEntity<Integer> {
     String name;
-    @Size(min = 1,max = 4,message = "Out of range !! ")
     Integer unit;
     String startData;
     String examData;

@@ -31,4 +31,12 @@ public class Employee extends BaseUser {
     public Long getSalary() {
         return 15000000L;
     }
+
+    @Override
+    public String toString() {
+        return  super.toString()+
+                "salary=" + salary +
+                ", hiredData='" + hiredData + '\'' +
+                '}';
+    }
 }
