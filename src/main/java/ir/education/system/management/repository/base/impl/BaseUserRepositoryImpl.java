@@ -34,11 +34,11 @@ public abstract class BaseUserRepositoryImpl <T extends BaseUser> extends BaseEn
 
     @Override
     public boolean existsByUsername(String username) {
-        TypedQuery<Integer> query = entityManager.createQuery(
+        TypedQuery<Long> query = entityManager.createQuery(
                 "select count(u) from "
                         + getEntityClass().getSimpleName()
                         + " u where u.username = :username",
-                Integer.class
+                Long.class
         );
         query.setParameter("username", username);
         return query.getSingleResult() > 0;
