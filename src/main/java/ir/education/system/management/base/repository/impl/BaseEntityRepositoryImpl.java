@@ -45,7 +45,8 @@ public abstract class BaseEntityRepositoryImpl<ID extends Serializable, T extend
     @Override
     public void deleteById(ID id) {
         beginTransaction();
-        entityManager.remove(id);
+        Optional<T> optional = findById(id);
+        optional.ifPresent(entityManager::remove);
         commitTransaction();
     }
 
