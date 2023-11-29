@@ -4,6 +4,7 @@ import ir.education.system.management.base.domin.BaseEntity;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.Optional;
 
 
 public interface BaseEntityRepository<ID extends Serializable, T extends BaseEntity<ID>> {
@@ -15,6 +16,8 @@ public interface BaseEntityRepository<ID extends Serializable, T extends BaseEnt
     void deleteById(ID id);
 
     Collection<T> findAll();
+
+    Optional<T> findById(ID id);
 
     void beginTransaction();
 
