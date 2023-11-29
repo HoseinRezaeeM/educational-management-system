@@ -22,9 +22,13 @@ public class Employee extends BaseUser {
     }
 
     public Employee(String firstname, String lastname, Integer age, String username,
-                    String password, String email, String mobileNumber, Long salary, String hiredData) {
+                    String password, String email, String mobileNumber, String hiredData) {
         super(firstname, lastname, age, username, password, email, mobileNumber);
-        this.salary = salary;
+        this.salary = getSalary();
         this.hiredData = hiredData;
+    }
+
+    public Long getSalary() {
+        return 15000000L;
     }
 }
