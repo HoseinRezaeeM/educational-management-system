@@ -4,17 +4,13 @@ import ir.education.system.management.base.domin.BaseEntity;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.util.List;
 
 @Entity
 @Getter
 @Setter
-@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -24,9 +20,8 @@ public class Course extends BaseEntity<Integer> {
     Integer unit;
     String startData;
     String examData;
-    @OneToOne
+    @OneToOne(fetch = FetchType.EAGER)
     Professor professor;
-    @ToString.Exclude
     @OneToMany(mappedBy = "course")
     List<SelectedCourse> courseList;
 
@@ -42,4 +37,14 @@ public class Course extends BaseEntity<Integer> {
         this.professor = professor;
     }
 
+    @Override
+    public String toString() {
+        return "Course{" +
+                "name='" + name + '\'' +
+                ", unit=" + unit +
+                ", startData='" + startData + '\'' +
+                " Professor name ="+professor.getLastname()+
+                ", examData='" + examData + '\'' +
+                '}';
+    }
 }
