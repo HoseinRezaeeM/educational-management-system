@@ -36,7 +36,10 @@ public class BaseMenu {
             switch (select) {
                 case 1 -> login();
                 case 2 -> signup();
-                case 3 -> System.out.println("exit");
+                case 3 -> {
+                    System.out.println("exit");
+                    break;
+                }
                 default -> System.out.println("---Eror404---");
             }
         } catch (Exception e) {
@@ -58,8 +61,6 @@ public class BaseMenu {
         System.out.println("Enter password : ");
         String password;
         password = validationPassword();
-        System.out.println("Enter Salary :");
-        Long salary = scanner.nextLong();
         System.out.println("Enter email : ");
         String email;
         email = validationEmail();
@@ -68,8 +69,7 @@ public class BaseMenu {
         mobileNumber = validationMoblieNumber();
         System.out.println("Enter hiredData :");
         String hiredData = scanner.next();
-
-        Employee employee = new Employee(firstName, lastName, age, username, password, email, mobileNumber, salary, hiredData);
+        Employee employee = new Employee(firstName, lastName, age, username, password, email, mobileNumber, hiredData);
         ApplicationContex.getEmployeeServiceImpl().save(employee);
         System.out.println("ADD to DataBase SUCESSFULLY");
 
@@ -170,7 +170,7 @@ public class BaseMenu {
             optionalProfessor = ApplicationContex.getProfessorServiceImpl().login(username, password);
             if (optionalProfessor.isPresent()) {
                 ProfessorMenu.openMenuProfessor();
-                ProfessorMenu.professor =optionalProfessor.get();
+                ProfessorMenu.professor = optionalProfessor.get();
                 isTrue = false;
             } else {
                 System.out.println("username and password UnCorrect !!!!\n");
@@ -186,10 +186,10 @@ public class BaseMenu {
             String username = scanner.next();
             System.out.println("Enter Password : ");
             String password = scanner.next();
-           optionalEmployee = ApplicationContex.getEmployeeServiceImpl().login(username, password);
+            optionalEmployee = ApplicationContex.getEmployeeServiceImpl().login(username, password);
             if (optionalEmployee.isPresent()) {
                 openMenuEmployee();
-                EmployeeMenu.employee=optionalEmployee.get();
+                EmployeeMenu.employee = optionalEmployee.get();
                 isTrue = false;
             } else {
                 System.out.println("username and password UnCorrect !!!!\n");
@@ -214,8 +214,14 @@ public class BaseMenu {
             case 2 -> performProfessorInformation();
             case 3 -> performEmployeeInformation();
             case 4 -> performCourseInformation();
-            case 5 -> findEmployeePayslip();
-            case 6 -> System.out.println("Exit ------------->");
+            case 5 -> {
+                findEmployeePayslip();
+                break;
+            }
+            case 6 -> {
+                System.out.println("Exit ------------->");
+                break;
+            }
             default -> System.out.println("---Eror404---");
         }
     }
