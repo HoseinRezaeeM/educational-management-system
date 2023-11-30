@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="497f4a7f-fbde-459a-ba15-98efcb275dbf" name="Changes" comment="create StudentValidation for hibernate validation">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/education/system/management/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/education/system/management/menu/EmployeeMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/education/system/management/menu/ProfessorMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/education/system/management/menu/StudentMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/education/system/management/validation/CourseValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ir/education/system/management/validation/EmployeeValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ir/education/system/management/menu/BaseMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ir/education/system/management/menu/BaseMenu.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2YRabbeTU7bErx4L39eLXK2YcKp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sp/Downloads/CW14a/CW14&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37718493&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ir.education.system.management.repository.impl" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ir.education.system.management.repository" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="baserepositorytest" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BaseEntityRepositoryImplTest">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ir.education.system.management.Application" />
+      <module name="Educational-system-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.education.system.management.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseEntityRepositoryImplTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Educational-system-management" />
+      <extension name="coverage" track_test_folders="true">
+        <pattern>
+          <option name="PATTERN" value="baserepositorytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="baserepositorytest" />
+      <option name="MAIN_CLASS_NAME" value="baserepositorytest.BaseEntityRepositoryImplTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseEntityRepositoryImplTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Educational-system-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baserepositorytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="baserepositorytest" />
+      <option name="MAIN_CLASS_NAME" value="baserepositorytest.BaseEntityRepositoryImplTest" />
+      <option name="METHOD_NAME" value="deleteById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseEntityRepositoryImplTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Educational-system-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baserepositorytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="baserepositorytest" />
+      <option name="MAIN_CLASS_NAME" value="baserepositorytest.BaseEntityRepositoryImplTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseEntityRepositoryImplTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Educational-system-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baserepositorytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="baserepositorytest" />
+      <option name="MAIN_CLASS_NAME" value="baserepositorytest.BaseEntityRepositoryImplTest" />
+      <option name="METHOD_NAME" value="save" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseEntityRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Educational-system-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="baserepositorytest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="baserepositorytest" />
+      <option name="MAIN_CLASS_NAME" value="baserepositorytest.BaseEntityRepositoryImplTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BaseEntityRepositoryImplTest.findAll" />
+        <item itemvalue="JUnit.BaseEntityRepositoryImplTest.deleteById" />
+        <item itemvalue="JUnit.BaseEntityRepositoryImplTest.update" />
+        <item itemvalue="JUnit.BaseEntityRepositoryImplTest.save" />
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="497f4a7f-fbde-459a-ba15-98efcb275dbf" name="Changes" comment="" />
+      <created>1700490918934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700490918934</updated>
+      <workItem from="1700490920384" duration="770000" />
+      <workItem from="1700491699855" duration="1913000" />
+      <workItem from="1700500704584" duration="4376000" />
+      <workItem from="1700556344989" duration="12539000" />
+      <workItem from="1700577657365" duration="10147000" />
+      <workItem from="1700643386150" duration="1369000" />
+      <workItem from="1700652002317" duration="678000" />
+      <workItem from="1700989851846" duration="8934000" />
+      <workItem from="1701007593528" duration="6629000" />
+      <workItem from="1701077979306" duration="6664000" />
+      <workItem from="1701163173235" duration="6893000" />
+      <workItem from="1701171006940" duration="23313000" />
+      <workItem from="1701195720012" duration="734000" />
+      <workItem from="1701201971243" duration="4818000" />
+      <workItem from="1701246585230" duration="307000" />
+      <workItem from="1701246904361" duration="166000" />
+      <workItem from="1701247198574" duration="9074000" />
+      <workItem from="1701260478098" duration="1017000" />
+      <workItem from="1701261572420" duration="7470000" />
+      <workItem from="1701277505906" duration="5840000" />
+      <workItem from="1701283370017" duration="5332000" />
+      <workItem from="1701315303850" duration="19634000" />
+      <workItem from="1701339729097" duration="5383000" />
+      <workItem from="1701352083607" duration="1081000" />
+    </task>
+    <task id="LOCAL-00022" summary="Create BaseEntityServiceImpl abstract">
+      <created>1701257372351</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701257372351</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Create BaseEntityService">
+      <created>1701257380375</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701257380375</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Create BaseUserRepositoryImpl Write login method">
+      <created>1701280039975</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1701280039975</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Write test crud method">
+      <created>1701282437688</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1701282437688</updated>
+    </task>
+    <task id="LOCAL-00026" summary="edit BaseEntityRepositoryImpl delete method">
+      <created>1701283437656</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1701283437656</updated>
+    </task>
+    <task id="LOCAL-00027" summary="edit BaseUserRepositoryImpl delete method">
+      <created>1701283479732</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701283479732</updated>
+    </task>
+    <task id="LOCAL-00028" summary="edit BaseUserServiceImpl delete method">
+      <created>1701283494100</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701283494100</updated>
+    </task>
+    <task id="LOCAL-00029" summary="write regex validation for password email mobilenumber">
+      <created>1701283548107</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1701283548107</updated>
+    </task>
+    <task id="LOCAL-00030" summary="edit BaseUser class">
+      <created>1701289207167</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1701289207167</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Create Course class">
+      <created>1701289232785</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1701289232785</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Create Employee class">
+      <created>1701289270068</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1701289270068</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Create Professor class">
+      <created>1701289312963</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1701289312963</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Create Student class">
+      <created>1701289323932</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1701289323932</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Create CourseStatus enum">
+      <created>1701289692568</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1701289692568</updated>
+    </task>
+    <task id="LOCAL-00036" summary="edit Employee write salary method">
+      <created>1701289797478</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1701289797478</updated>
+    </task>
+    <task id="LOCAL-00037" summary="edit Employee and course class">
+      <created>1701293292289</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1701293292289</updated>
+    </task>
+    <task id="LOCAL-00038" summary="edit BaseEntityRepositoryImplTest">
+      <created>1701334814206</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1701334814206</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Create ProfessorRepository.java">
+      <created>1701342833295</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1701342833295</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Create ProfessorRepositoryImpl">
+      <created>1701342849489</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1701342849489</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Create ProfessorService">
+      <created>1701342866586</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1701342866586</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Create ProfessorServiceImpl">
+      <created>1701342877623</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1701342877623</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Create ProfessorType">
+      <created>1701342998118</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1701342998118</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Create EmployeeRepository">
+      <created>1701352159635</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352159635</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Create EmployeeRepositoryImpl">
+      <created>1701352175150</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352175150</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Create EmployeeServiceImpl">
+      <created>1701352189688</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352189688</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Create EmployeeService">
+      <created>1701352199694</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352199694</updated>
+    </task>
+    <task id="LOCAL-00048" summary="edit Course Class">
+      <created>1701352252804</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352252804</updated>
+    </task>
+    <task id="LOCAL-00049" summary="edit CourseRepository">
+      <created>1701352277730</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352277730</updated>
+    </task>
+    <task id="LOCAL-00050" summary="edit CourseRepositoryImpl">
+      <created>1701352286317</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352286317</updated>
+    </task>
+    <task id="LOCAL-00051" summary="edit CourseService">
+      <created>1701352296779</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352296779</updated>
+    </task>
+    <task id="LOCAL-00052" summary="edit CourseServiceImpl">
+      <created>1701352310489</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352310489</updated>
+    </task>
+    <task id="LOCAL-00053" summary="create SemesterProfessor class for report from Professor">
+      <created>1701352472355</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352472355</updated>
+    </task>
+    <task id="LOCAL-00054" summary="create SemesterProfessorRepository">
+      <created>1701352483021</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352483021</updated>
+    </task>
+    <task id="LOCAL-00055" summary="create SemesterProfessorRepositoryImpl">
+      <created>1701352491799</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352491799</updated>
+    </task>
+    <task id="LOCAL-00056" summary="create SemesterProfessorService">
+      <created>1701352507667</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352507667</updated>
+    </task>
+    <task id="LOCAL-00057" summary="create SemesterProfessorServiceImpl">
+      <created>1701352516237</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352516237</updated>
+    </task>
+    <task id="LOCAL-00058" summary="create SelectedCourse class for select course by student and employee">
+      <created>1701352892450</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352892450</updated>
+    </task>
+    <task id="LOCAL-00059" summary="create SelectedCourse class for select course by student and employee">
+      <created>1701352900115</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352900116</updated>
+    </task>
+    <task id="LOCAL-00060" summary="create SelectedCourseRepositoryImpl">
+      <created>1701352914903</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352914903</updated>
+    </task>
+    <task id="LOCAL-00061" summary="create SelectedCourseServiceImpl">
+      <created>1701352926043</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352926043</updated>
+    </task>
+    <task id="LOCAL-00062" summary="create SelectedCourseService">
+      <created>1701352933159</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352933159</updated>
+    </task>
+    <task id="LOCAL-00063" summary="create StudentRepository">
+      <created>1701352971966</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352971966</updated>
+    </task>
+    <task id="LOCAL-00064" summary="create StudentRepositoryImpl">
+      <created>1701352979428</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352979428</updated>
+    </task>
+    <task id="LOCAL-00065" summary="create StudentService">
+      <created>1701352987954</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352987954</updated>
+    </task>
+    <task id="LOCAL-00066" summary="create StudentServiceImpl">
+      <created>1701352996223</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1701352996223</updated>
+    </task>
+    <task id="LOCAL-00067" summary="create ProfessorValidation for hibernate validation">
+      <created>1701353040916</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1701353040916</updated>
+    </task>
+    <task id="LOCAL-00068" summary="create SelectedCourseValidation for hibernate validation">
+      <created>1701353065306</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1701353065306</updated>
+    </task>
+    <task id="LOCAL-00069" summary="create SemesterProfessorValidation for hibernate validation">
+      <created>1701353105227</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1701353105227</updated>
+    </task>
+    <task id="LOCAL-00070" summary="create StudentValidation for hibernate validation">
+      <created>1701353162454</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1701353162454</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create EmployeeRepositoryImpl" />
+    <MESSAGE value="Create EmployeeServiceImpl" />
+    <MESSAGE value="Create EmployeeService" />
+    <MESSAGE value="edit Course Class" />
+    <MESSAGE value="edit CourseRepository" />
+    <MESSAGE value="edit CourseRepositoryImpl" />
+    <MESSAGE value="edit CourseService" />
+    <MESSAGE value="edit CourseServiceImpl" />
+    <MESSAGE value="create SemesterProfessor class for report from Professor" />
+    <MESSAGE value="create SemesterProfessorRepository" />
+    <MESSAGE value="create SemesterProfessorRepositoryImpl" />
+    <MESSAGE value="create SemesterProfessorService" />
+    <MESSAGE value="create SemesterProfessorServiceImpl" />
+    <MESSAGE value="create SelectedCourse class for select course by student and employee" />
+    <MESSAGE value="create SelectedCourseRepositoryImpl" />
+    <MESSAGE value="create SelectedCourseServiceImpl" />
+    <MESSAGE value="create SelectedCourseService" />
+    <MESSAGE value="create StudentRepository" />
+    <MESSAGE value="create StudentRepositoryImpl" />
+    <MESSAGE value="create StudentService" />
+    <MESSAGE value="create StudentServiceImpl" />
+    <MESSAGE value="create ProfessorValidation for hibernate validation" />
+    <MESSAGE value="create SelectedCourseValidation for hibernate validation" />
+    <MESSAGE value="create SemesterProfessorValidation for hibernate validation" />
+    <MESSAGE value="create StudentValidation for hibernate validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="create StudentValidation for hibernate validation" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Educational_system_management_application$BaseEntityRepositoryImplTest.ic" NAME="BaseEntityRepositoryImplTest Coverage Results" MODIFIED="1701342338718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>baserepositorytest.*</FILTER>
+    </SUITE>
+  </component>
+</project>
