@@ -26,7 +26,7 @@ class BaseEntityRepositoryImplTest {
 
     @Test
     void save() {
-        Employee employee = new Employee("Hosein", "Rezaei", 25, "HRRB", "QAa1@234", "rezaeen77@emial.com", "09125174512", 12000000L, "1401");
+        Employee employee = new Employee("Hosein", "Rezaei", 25, "HRRB", "QAa1@234", "rezaeen77@emial.com", "09125174512", "1401");
         ApplicationContex.getEmployeeServiceImpl().save(employee);
         boolean contains = ApplicationContex.getEmployeeServiceImpl().existsByUsername("HRRB");
         Assertions
@@ -36,18 +36,18 @@ class BaseEntityRepositoryImplTest {
     @Test
     void update() {
         Employee employee = new Employee();
-        Employee newEmployee =new Employee("Hassan", "Rezaei", 25, "HRRB", "QAa1@234", "rezaeen77@emial.com", "09125174512", 12000000L, "1401");
+        Employee newEmployee =new Employee("Hassan", "Rezaei", 25, "HRRB", "QAa1@234", "rezaeen77@emial.com", "09125174512", "1401");
         newEmployee.setFirstname("Hassan");
-        ApplicationContex.getEmployeeServiceImpl().update(newEmployee,4);
-        final Optional<Employee> optionalEmployee = ApplicationContex.getEmployeeServiceImpl().findById(4);
+        ApplicationContex.getEmployeeServiceImpl().update(newEmployee,64);
+        final Optional<Employee> optionalEmployee = ApplicationContex.getEmployeeServiceImpl().findById(64);
         Assertions
                 .assertEquals(newEmployee.getFirstname(),optionalEmployee.get().getFirstname());
     }
 
     @Test
     void deleteById() {
-        ApplicationContex.getEmployeeServiceImpl().deleteById(3);
-        final Optional<Employee> optionalEmployee = ApplicationContex.getEmployeeServiceImpl().findById(3);
+        ApplicationContex.getEmployeeServiceImpl().deleteById(63);
+        final Optional<Employee> optionalEmployee = ApplicationContex.getEmployeeServiceImpl().findById(63);
         Assertions.assertTrue(optionalEmployee.isEmpty());
     }
 
