@@ -40,3 +40,4 @@ It is 1 million tomans.
 For example, if the professor taught ten units in the first semester of 1402
 The salary calculation is as follows
 10,000,000 = 1,000,000*10
+<img src="https://github.com/HoseinRezaeeM/educational-management-system/blob/master/Untitled.png">
