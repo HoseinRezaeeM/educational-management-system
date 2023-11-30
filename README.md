@@ -14,7 +14,7 @@ Exit
 View your profile 
 View the list of lessons 
 The possibility of choosing a unit with the following conditions 
-If the student's GPA in the previous semester was higher than 18, the selection limit 
+If the student's average in the previous semester was higher than 18, the selection limit 
 Up to 24 units are allowed. Otherwise, the ceiling is 20 units
 be
 If a lesson has already been passed. Another possibility to choose it 
