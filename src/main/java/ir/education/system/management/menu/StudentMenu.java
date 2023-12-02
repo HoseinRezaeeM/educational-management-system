@@ -64,6 +64,9 @@ public class StudentMenu {
                 System.out.println("Enter Course ID :");
                 int id = scanner.nextInt();
                 Course course = new Course(id);
+                if (id==0){
+                    break;
+                }
                 SelectedCourse selectedCourse = new SelectedCourse(semester, student, course);
                 if (ApplicationContex.getSelectedCourseSreviceImpl().notExistByCourseId(semester, course, student) < 1
                         && ApplicationContex.getSelectedCourseSreviceImpl().selectCourseFail(student,course) < 1 ) {
@@ -84,6 +87,9 @@ public class StudentMenu {
                 int id = scanner.nextInt();
                 Course course = new Course(id);
                 SelectedCourse selectedCourse = new SelectedCourse(semester, student, course);
+                if (id==0){
+                    break;
+                }
                 if (ApplicationContex.getSelectedCourseSreviceImpl().notExistByCourseId(semester, course, student) < 1
                         && ApplicationContex.getSelectedCourseSreviceImpl().selectCourseFail(student,course) < 1 ) {
                     ApplicationContex.getSelectedCourseSreviceImpl().save(selectedCourse);
