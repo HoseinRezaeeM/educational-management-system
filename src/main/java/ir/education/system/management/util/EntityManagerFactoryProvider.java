@@ -4,7 +4,7 @@ package ir.education.system.management.util;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class EntityManerFactoryProvider {
+public class EntityManagerFactoryProvider {
     private final static EntityManagerFactory entityManagerFactory;
 
     static{
