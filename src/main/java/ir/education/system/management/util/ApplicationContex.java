@@ -26,8 +26,10 @@ public class ApplicationContex {
     private static final UserService userService;
 
 
+
+
     static {
-        entityManager = EntityManerFactoryProvider.getEntityManagerFactory().createEntityManager();
+        entityManager = EntityManagerFactoryProvider.getEntityManagerFactory().createEntityManager();
         employeeRepository = new EmployeeRepositoryImpl(entityManager);
         employeeService = new EmployeeServiceImpl(employeeRepository);
         professorRepository = new ProfessorRepositoryImpl(entityManager);
