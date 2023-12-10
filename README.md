@@ -1,4 +1,4 @@
-# educational-management-system
+# educational-management-system-jpa
 <img src="https://github.com/HoseinRezaeeM/educational-management-system/blob/master/education-management-system-in-bangladesh-bidyaan.jpg">
 <i><b>Solution</b></i>
 <br>
